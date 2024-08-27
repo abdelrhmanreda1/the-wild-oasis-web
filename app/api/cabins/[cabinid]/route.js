@@ -1,4 +1,6 @@
-import { getBookedDatesByCabinId, getCabin } from "@/app/_lib/data-service";
+// import { getBookedDatesByCabinId, getCabin } from "@/app/_lib/data-service";
+
+import { getBookedDatesByCabinId, getCabin } from "@/app/_libs/data-service";
 
 export async function GET(request, { params }) {
   const { cabinid } = params;
