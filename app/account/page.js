@@ -7,5 +7,5 @@ export default async function Page() {
   const session = await auth();
   console.log(session);
   const firstName = session?.user.name.split(" ").at(0);
-  return <h2 className="font-semibold mt-[-4rem] sm:mt-0 sm:text-2xl  text-3xl text-accent-400 mb-7">Welcome,{firstName}</h2>;
+  return <h2 className="font-semibold mt-[-6rem] sm:mt-4 sm:text-4xl  text-3xl text-accent-400 mb-7 tracking-wide">Welcome , {firstName}</h2>;
 }
